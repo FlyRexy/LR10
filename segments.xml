@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects type="array">
+  <object>
+    <value>1 4 9</value>
+    <index type="integer">1</index>
+  </object>
+  <object>
+    <value>1 4</value>
+    <index type="integer">2</index>
+  </object>
+  <object>
+    <value>9 81 100</value>
+    <index type="integer">3</index>
+  </object>
+</objects>
