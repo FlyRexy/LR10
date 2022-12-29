@@ -1,7 +1,7 @@
 <div class = 'container'>
   <div class = 'col-3'>
     <br>
-    <%= form_with url: res_path, :method => "get" do |form|%>
+    <%= form_with url: home_result_path, data: {turbo: false}, :method => "get" do |form|%>
       <%= form.label("Input number of elements in array")%>
       <br>
       <%= form.number_field :num, in: 1..300, step: 1, class: "form-control form-control-dark text-bg-dark" %>
@@ -9,6 +9,17 @@
       <%= form.label("Input elements of array")%>
       <br>
       <%= form.text_area :arr, size: "15x1", class: "form-control form-control-dark text-bg-dark"%>
+      <br>
+      <%= form.label("Choose an option")%>
+      <div class="radio">
+        <%= form.radio_button :side, 'server' %>SERVER
+      </div>
+      <div class="radio">
+        <%= form.radio_button :side, 'client' %>CLIENT
+      </div>
+      <div class="radio">
+        <%= form.radio_button :side, 'xml' %>XML
+      </div>
       <br>
       <%= form.submit "Result", class: "btn btn-outline-dark me-2"%>
       <% end %>

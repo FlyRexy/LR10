@@ -4,7 +4,7 @@
     <html>
       <body>
         <h2 style="padding: 20px">Result</h2>
-        <table class="table table-dark">
+        <table class="table table-dark" style="border: 1px solid">
           <tr>
             <th>Segment #</th>
             <th>Segments</th>
